@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+    --color-bg-login: #f00000;
+    --color-bg-home: #ffffff; 
+}
+
+/******** Fuentes tipograficas **********/
+$primary-font: "Audiowide", sans-serif;
+$secondary-font: "Jura", sans-serif;
+
+
+/******** Paleta de color **********/
+$login-background: #3E6562;
