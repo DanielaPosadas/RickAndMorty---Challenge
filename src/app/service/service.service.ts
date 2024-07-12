@@ -11,8 +11,8 @@ export class APIService {
 
   URL_API = 'https://rickandmortyapi.com/api/character';
 
-  getDefaultCharacters(): Observable<Results> {
-    return this.http.get<Results>(`${this.URL_API}`).pipe(
+  getDefaultCharacters(page: number): Observable<Results> {
+    return this.http.get<Results>(`${this.URL_API}/?page=${page}`).pipe(
       map((resp) => {
         return resp as Results;
       })

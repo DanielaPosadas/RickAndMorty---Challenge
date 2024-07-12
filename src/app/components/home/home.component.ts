@@ -22,6 +22,7 @@ export class HomeComponent implements OnInit {
   constructor(private service: APIService) {}
 
   ngOnInit(): void {
+    this.getDefaultChar(this.NewPage);
     this.getAllCharacters(
       this.NewPage,
       this.statusChar,
@@ -30,9 +31,10 @@ export class HomeComponent implements OnInit {
     );
   }
 
-  getDefaultChar() {
-    this.service.getDefaultCharacters().subscribe((resp) => {
+  getDefaultChar(page: number) {
+    this.service.getDefaultCharacters(page).subscribe((resp) => {
       this.CharactersList = resp.results;
+      console.log('estos son', this.CharactersList);
     });
   }
 
@@ -51,10 +53,10 @@ export class HomeComponent implements OnInit {
         }
       },
       error: (error) => {
-        this.error = error;
-        if (this.error instanceof HttpErrorResponse) {
+        if (error.status === 404) {
           this.errorMessage = true;
           this.CharactersList = [];
+          this.namechar = '';
           console.log('mensaje error', this.notFoundMess);
         }
       },
@@ -79,6 +81,7 @@ export class HomeComponent implements OnInit {
       this.speciesChar,
       this.namechar
     );
+    console.log('la pagina desde home', this.NewPage);
   }
 
   status(stat: string) {
@@ -116,7 +119,10 @@ export class HomeComponent implements OnInit {
 
   ParamsCleanBotton(event: any) {
     console.log('click al boton', event);
-    this.getDefaultChar();
+    this.getDefaultChar(this.NewPage);
+    this.namechar = '';
+    this.NewPage = 0;
     this.errorMessage = false;
+    console.log('estos son los nuevos personajes', this.CharactersList);
   }
 }
