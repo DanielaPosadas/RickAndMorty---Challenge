@@ -1,31 +1,24 @@
-<<<<<<< HEAD
+
 # RickAndMortyChallenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+## Reto Técnico utilizando la API de Rick y Morty
+Este proyecto surge como respuesta a un reto técnico que emplea la API pública de Rick y Morty, una fuente de datos que proporciona información detallada sobre personajes, episodios y ubicaciones del universo ficticio de la popular serie animada.
 
-## Development server
+## Objetivo
+El objetivo principal de este proyecto es aplicar conocimientos en desarrollo web utilizando un framework frontend, junto con la integración de la API pública de Rick y Morty. La aplicación resultante es una plataforma interactiva que facilita a los usuarios explorar y obtener información detallada sobre los personajes, episodios y ubicaciones presentes en la serie animada.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Tecnologías Utilizadas:
 
-## Code scaffolding
+* Angular: Framework utilizado para construir la estructura y funcionalidad de la aplicación web.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* API de Rick y Morty: Fuente de datos principal que proporciona información sobre personajes, episodios y ubicaciones.
 
-## Build
+* Bootstrap y Estilos Personalizados: Para el diseño y la apariencia visual de la aplicación, se han utilizado Bootstrap junto con estilos personalizados. Esto asegura una presentación visual coherente y atractiva, optimizada para ser completamente responsive en diferentes dispositivos y tamaños de pantalla.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Conclusiones:
+Este proyecto no solo demuestra habilidades técnicas en el desarrollo web y el manejo de APIs, sino también la capacidad de crear una aplicación interactiva que aprovecha recursos externos de manera efectiva. Al utilizar la API de Rick y Morty, se ha logrado construir una experiencia digital la cual proporciona una plataforma para explorar y disfrutar del universo narrativo de manera digital y dinámica.
 
-## Running unit tests
+## Desarrolladora web
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-=======
-# RickAndMorty---Challenge
->>>>>>> 76f9ed6ba4c634e69fd73885d1658b28ebc15231
+| [<img src="https://avatars.githubusercontent.com/u/144648301?v=4" width=115><br><sub>Daniela Posadas</sub>](https://github.com/DanielaPosadas) |
+| :---: |
