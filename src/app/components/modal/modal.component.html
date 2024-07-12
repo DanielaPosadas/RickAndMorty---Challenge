@@ -1,0 +1,57 @@
+
+<div class="modal-content" style="margin-top: 0%">
+        
+            <div class="Contenedor modal-body" style="margin: 0%;">
+                
+            <div class="identificationClose">
+                <div class="idName"><p class="modal-title">IDENTIFICATION CARD</p></div>
+                <div class="buttonClose"><button class="close" aria-label="close" type="button" (click)="modal.dismiss()">
+                    <span aria-hidden="true">&times;</span>
+                </button></div>
+            </div>
+            <div class="margin" 
+                [ngStyle]="{'border-color': 
+                            character?.species === 'Human' ? '#3E6562':
+                            character?.species === 'Alien' ? '#05930B':
+                            character?.species === 'Mythological Creature' ? '#09ABBC' : 'black'
+                            }">
+                    <div class="infoCard">
+                        <img src="{{character?.image}}" alt="">
+
+                        <dl>
+                            <dt class="card name">Nombre</dt>
+                            <dd class="card Name">{{character?.name}}</dd>
+                        </dl>
+                        <div class="contendorInfo">
+                            <div class="Gender">
+                                <dl>
+                                    <dt class="card gender">Genero</dt>
+                                    <dd class="card gender">{{character?.gender}}</dd>
+                                </dl>
+                                </div>
+                                <div class="Procedencia">
+                                <dl>
+                                     <dt class="card procedencia">Procedencia</dt>
+                                    <dd class="card procedencia">{{character?.location?.name}}</dd>
+                                 </dl>
+                            </div>
+                        </div>
+                        
+
+                    <div class="d-grid gap-1">
+                        <button class="btn btn-primary btn-block" type="button"
+                        [ngStyle]="{'background-color': 
+                            character?.species === 'Human' ? '#3E6562':
+                            character?.species === 'Alien' ? '#05930B':
+                            character?.species === 'Mythological Creature' ? '#09ABBC' : 'black'
+                            }" (click)="onButton()" style="margin-bottom:5%;">Capítulos de aparición</button>
+                      </div>
+                     <div class="capitulos" *ngIf="buttonActivate">
+                        <ul style=" display:flex; flex-direction: column; align-items:center; list-style: none; height: 100%; padding:0%;">
+                            <li *ngFor="let episode of character?.episode" style="font-size: 0.9rem; margin-top: 2%;">{{ episode }}</li>
+                        </ul>
+                     </div>
+
+                </div>
+      
+</div>

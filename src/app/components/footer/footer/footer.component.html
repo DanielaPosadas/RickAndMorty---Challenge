@@ -1,1 +1,9 @@
-<p>footer works!</p>
+<nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+      <li class="page-item" (click)="prevPage()"><a class="page-link">Previous</a></li>
+      <li class="page-item" [ngClass]="{'active': PActual === 1}" (click)="cambiarPage(1)"><a class="page-link">1</a></li>
+      <li class="page-item" [ngClass]="{'active': PActual === 2}" (click)="cambiarPage(2)"><a class="page-link">2</a></li>
+      <li class="page-item" [ngClass]="{'active': PActual === 3}" (click)="cambiarPage(3)"><a class="page-link">3</a></li>
+      <li class="page-item" (click)="nextPage()"><a class="page-link">Next</a></li>
+    </ul>
+  </nav>

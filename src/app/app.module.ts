@@ -8,7 +8,12 @@ import { FooterComponent } from './components/footer/footer/footer.component';
 import { CardComponent } from './components/cards/card/card.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ModalComponent } from './components/modal/modal.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FiltrosComponent } from './components/filtros/filtros/filtros.component';
+import { NotFoundComponent } from './views/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +22,18 @@ import { ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     CardComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    ModalComponent,
+    FiltrosComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,6 +4,7 @@ import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { AuthGuard } from './core/auth.guard';
 import { LoginGuardGuard } from './core/loginGuard/login-guard.guard';
+import { ModalComponent } from './components/modal/modal.component';
 
 const routes: Routes = [
   {
@@ -14,12 +15,16 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
-    canActivate: [LoginGuardGuard]
+   // canActivate: [LoginGuardGuard]
   },
   {
     path: 'home',
     component: HomeComponent,
-    canActivate: [AuthGuard]
+    //canActivate: [AuthGuard]
+  },
+  {
+    path: 'modal',
+    component: ModalComponent,
   }
 ];
 
