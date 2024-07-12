@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { Characters, Espisodes } from 'src/app/interfaces/interface';
 import { APIService } from 'src/app/service/service.service';
 
@@ -16,9 +16,7 @@ export class ModalComponent implements OnInit {
   buttonActivate: boolean = false;
 
   constructor(
-    public modal: NgbActiveModal,
-    private service: APIService,
-    private router: ActivatedRoute
+    public modal: NgbActiveModal
   ) {}
 
   ngOnInit(): void {}

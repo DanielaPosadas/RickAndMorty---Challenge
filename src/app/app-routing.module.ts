@@ -5,7 +5,6 @@ import { HomeComponent } from './components/home/home.component';
 import { AuthGuard } from './core/auth.guard';
 import { LoginGuardGuard } from './core/loginGuard/login-guard.guard';
 import { ModalComponent } from './components/modal/modal.component';
-import { NotFoundComponent } from './views/not-found/not-found.component';
 import { NotFoundPathComponent } from './views/not-found-path/not-found-path.component';
 
 const routes: Routes = [
