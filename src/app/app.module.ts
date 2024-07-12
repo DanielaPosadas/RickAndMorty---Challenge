@@ -14,6 +14,7 @@ import { ModalComponent } from './components/modal/modal.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FiltrosComponent } from './components/filtros/filtros/filtros.component';
 import { NotFoundComponent } from './views/not-found/not-found.component';
+import { NotFoundPathComponent } from './views/not-found-path/not-found-path.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NotFoundComponent } from './views/not-found/not-found.component';
     LoginComponent,
     ModalComponent,
     FiltrosComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    NotFoundPathComponent
   ],
   imports: [
     BrowserModule,

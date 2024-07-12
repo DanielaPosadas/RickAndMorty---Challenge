@@ -1,12 +1,23 @@
 <app-header></app-header>
-<app-filtros (status)="status($event)" (species)="species($event)" (name)="name($event)" (ParamsCleanBotton)="ParamsCleanBotton($event)"></app-filtros>
+<app-filtros
+  (status)="status($event)"
+  (species)="species($event)"
+  (name)="name($event)"
+  (ParamsCleanBotton)="ParamsCleanBotton($event)"
+></app-filtros>
 <div class="container">
-    <div class="row text-center d-flex justify-content-center">
-        <div class="col-10 col-sm-8 col-md-5 col-lg-4 col-xl-3" *ngFor="let character of CharactersList">
-            <app-card [character]="character"></app-card>
-        </div>
-        <app-not-found *ngIf="errorMessage"></app-not-found>
+  <div class="row text-center d-flex justify-content-center">
+    <div
+      class="col-10 col-sm-8 col-md-5 col-lg-4 col-xl-3"
+      *ngFor="let character of CharactersList"
+    >
+      <app-card [character]="character"></app-card>
     </div>
+    <app-not-found *ngIf="errorMessage"></app-not-found>
+  </div>
 </div>
-<app-footer (PCharacter)="PCharacter($event)" (ChangePage)="ChangePage($event)" *ngIf="!errorMessage"></app-footer>
-
+<app-footer
+  (PCharacter)="PCharacter($event)"
+  (ChangePage)="ChangePage($event)"
+  *ngIf="!errorMessage"
+></app-footer>

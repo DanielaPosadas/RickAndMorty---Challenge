@@ -1,79 +1,80 @@
-@import '/src/styles.scss';
+@import "/src/styles.scss";
 
-.Contenedor{
-    display: flex;
-    position: relative;
-    background-color: #F3F7F0;
-    box-shadow: 2px 2px 5px #BDBDBD;
-    margin-bottom: 10%;
-    border-radius: 15px;
-    justify-content: center;
-    height: 95%;
-    cursor: pointer;
+.Contenedor {
+  display: flex;
+  position: relative;
+  background-color: #f3f7f0;
+  box-shadow: 2px 2px 5px #bdbdbd;
+  margin-bottom: 10%;
+  border-radius: 15px;
+  justify-content: center;
+  height: 95%;
+  cursor: pointer;
 }
 
 .Contenedor:hover {
-    transform: scale(1.04);
+  transform: scale(1.04);
 }
 
 .margin {
-    display: flex;
-    justify-content: center;
-    margin: 8%;
-    margin-top: 12%;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 5%;
-    width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: 8%;
+  margin-top: 12%;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 5%;
+  width: 90%;
 }
 
 .id {
-    position: absolute;
-    margin-top: 3%;
-    font-family:$secondary-font;
-    font-weight: 800;
+  position: absolute;
+  margin-top: 3%;
+  font-family: $secondary-font;
+  font-weight: 800;
 }
 
 .infoCard {
-    justify-content: center;
-    width: 85%;
-    height: auto;
+  justify-content: center;
+  width: 85%;
+  height: auto;
 }
 
-img{
-    width: 75%;
-    height: auto;
-    margin: 5%;
-    border-radius: 10px;
+img {
+  width: 75%;
+  height: auto;
+  margin: 5%;
+  border-radius: 10px;
 }
 
 .card {
-    background-color: none;
-    border-color: #F3F7F0;
-    background-color: #F3F7F0;
+  background-color: none;
+  border-color: #f3f7f0;
+  background-color: #f3f7f0;
 }
 
-.Status, .Especie {
-display: inline-block;
+.Status,
+.Especie {
+  display: inline-block;
 }
 
-.Status{
-    margin-right: 4%;
+.Status {
+  margin-right: 4%;
 }
 
 .Especie {
-    margin-left: 4%;
+  margin-left: 4%;
 }
 
-dt{
-    font-family: $secondary-font;
-    font-size: 0.9rem;
-    font-weight: 400;
+dt {
+  font-family: $secondary-font;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 .Name {
-    font-family: $primary-font;
-    font-size: 1.2rem;
-    background-color: #D9D9D9;
-    border-radius: 0 0 10px 10px;
+  font-family: $primary-font;
+  font-size: 1.2rem;
+  background-color: #d9d9d9;
+  border-radius: 0 0 10px 10px;
 }

@@ -5,11 +5,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-items: center;
   width: 100%;
+  height: 100vh;
 }
 
 img {
-  width: 30%;
+  width: 35%;
 }
 
 .Number {
@@ -18,7 +20,13 @@ img {
   margin: 0%;
 }
 
+.Wubba {
+  font-family: $primary-font;
+  font-size: 1.8rem;
+  margin: 0%;
+}
+
 .descrip {
   font-family: $secondary-font;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }

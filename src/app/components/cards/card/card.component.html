@@ -1,33 +1,37 @@
 <div class="Contenedor" (click)="onSelect()">
-         <div class="id"><p>IDENTIFICATION CARD</p></div>
-                <div class="margin" 
-                [ngStyle]="{'border-color': 
-                            character?.species === 'Human' ? '#3E6562':
-                            character?.species === 'Alien' ? '#05930B':
-                            character?.species === 'Mythological Creature' ? '#09ABBC' : 'black'
-                            }">
-                    <div class="infoCard">
-                        <img src="{{character?.image}}" alt="">
+  <div class="id"><p>IDENTIFICATION CARD</p></div>
+  <div
+    class="margin"
+    [ngStyle]="{
+      'border-color':
+        character?.species === 'Human'
+          ? '#3E6562'
+          : character?.species === 'Alien'
+          ? '#05930B'
+          : character?.species === 'Mythological Creature'
+          ? '#09ABBC'
+          : 'black'
+    }"
+  >
+    <div class="infoCard">
+      <img src="{{ character?.image }}" alt="" />
 
-                        <dl>
-                            <dt class="card name">Nombre</dt>
-                            <dd class="card Name">{{character?.name}}</dd>
-                        </dl>
-                        <div class="Status">
-                        <dl>
-                            <dt class="card status">Estatus</dt>
-                            <dd class="card status">{{character?.status}}</dd>
-                        </dl>
-                        </div>
-                        <div class="Especie">
-                        <dl>
-                             <dt class="card especie">Especie</dt>
-                            <dd class="card especie">{{character?.species}}</dd>
-                         </dl>
-                        </div>
-                    </div>
-                    
-                    
-        </div>
- </div>
-        
+      <dl>
+        <dt class="card name">Nombre</dt>
+        <dd class="card Name">{{ character?.name }}</dd>
+      </dl>
+      <div class="Status">
+        <dl>
+          <dt class="card status">Estatus</dt>
+          <dd class="card status">{{ character?.status }}</dd>
+        </dl>
+      </div>
+      <div class="Especie">
+        <dl>
+          <dt class="card especie">Especie</dt>
+          <dd class="card especie">{{ character?.species }}</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>

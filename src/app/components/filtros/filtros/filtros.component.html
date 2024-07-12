@@ -1,31 +1,45 @@
 <div class="container">
-<div class="row">
-
-<div class="main">
-    <div class="form-floating mx-auto text-center">
-        <input type="email" class="form-control" id="floatingInput" [(ngModel)]="NameWritten" (ngModelChange)="NameCharacter()">
+  <div class="row">
+    <div class="main">
+      <div class="form-floating mx-auto text-center">
+        <input
+          type="email"
+          class="form-control"
+          id="floatingInput"
+          [(ngModel)]="NameWritten"
+          (ngModelChange)="NameCharacter()"
+        />
         <label for="floatingInput">Nombre del personaje</label>
-    </div>
-    <div class="contenedorFiltros">
-        <select class="form-select filter" aria-label=".form-select-sm" (change)="StatusSelected($event)" [(ngModel)]="statusSel">
-            <option selected value="">Estatus</option>
-            <option value="Alive">Alive</option>
-            <option value="Dead">Dead</option>
-            <option value="Unknown">Unknown</option>
+      </div>
+      <div class="contenedorFiltros">
+        <select
+          class="form-select filter"
+          aria-label=".form-select-sm"
+          (change)="StatusSelected($event)"
+          [(ngModel)]="statusSel"
+        >
+          <option selected value="">Estatus</option>
+          <option value="Alive">Alive</option>
+          <option value="Dead">Dead</option>
+          <option value="Unknown">Unknown</option>
         </select>
-        <select class="form-select filter" aria-label=".form-select-sm" (change)="SpecieSelected($event)" [(ngModel)]="specieSel">
-            <option selected value="">Especie</option>
-            <option value="Human">Human</option>
-            <option value="Alien">Alien</option>
-            <option value="Mythological">Mythological</option>
+        <select
+          class="form-select filter"
+          aria-label=".form-select-sm"
+          (change)="SpecieSelected($event)"
+          [(ngModel)]="specieSel"
+        >
+          <option selected value="">Especie</option>
+          <option value="Human">Human</option>
+          <option value="Alien">Alien</option>
+          <option value="Mythological">Mythological</option>
         </select>
+      </div>
+      <div class="containerButton">
+        <button (click)="CharacterDefault($event)" class="form-button">
+          Limpiar
+        </button>
+      </div>
     </div>
-    <div class="containerButton">
-        <button (click)="CharacterDefault($event)" class="form-button">Limpiar</button>
-    </div>
+  </div>
 </div>
-
-</div>
-
-</div>
-

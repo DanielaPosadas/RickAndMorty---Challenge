@@ -5,6 +5,8 @@ import { HomeComponent } from './components/home/home.component';
 import { AuthGuard } from './core/auth.guard';
 import { LoginGuardGuard } from './core/loginGuard/login-guard.guard';
 import { ModalComponent } from './components/modal/modal.component';
+import { NotFoundComponent } from './views/not-found/not-found.component';
+import { NotFoundPathComponent } from './views/not-found-path/not-found-path.component';
 
 const routes: Routes = [
   {
@@ -15,21 +17,25 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
-   // canActivate: [LoginGuardGuard]
+    canActivate: [LoginGuardGuard],
   },
   {
     path: 'home',
     component: HomeComponent,
-    //canActivate: [AuthGuard]
+    canActivate: [AuthGuard],
   },
   {
     path: 'modal',
     component: ModalComponent,
-  }
+  },
+  {
+    path: '**',
+    component: NotFoundPathComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
