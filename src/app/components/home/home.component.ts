@@ -121,6 +121,8 @@ export class HomeComponent implements OnInit {
     console.log('click al boton', event);
     this.getDefaultChar(this.NewPage);
     this.namechar = '';
+    this.speciesChar = '';
+    this.statusChar = '';
     this.NewPage = 0;
     this.errorMessage = false;
     console.log('estos son los nuevos personajes', this.CharactersList);
