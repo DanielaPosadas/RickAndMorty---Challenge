@@ -1,8 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { Characters, Espisodes } from 'src/app/interfaces/interface';
-import { APIService } from 'src/app/service/service.service';
 
 @Component({
   selector: 'app-modal',
